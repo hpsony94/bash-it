@@ -227,6 +227,10 @@ else
 	_enable-alias general
 fi
 
+# Loading inputrc into profile directory
+echo -e "Loading inputrc profile into your home directory"
+cp -f inputrc "$HOME/.inputrc"
+
 echo ""
 echo -e "\033[0;32mInstallation finished successfully! Enjoy bash-it!\033[0m"
 # shellcheck disable=SC2086
